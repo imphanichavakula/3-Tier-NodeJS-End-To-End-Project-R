@@ -209,7 +209,7 @@ jobs:
             --output server-trivy-fs-report.json \
             --severity HIGH,CRITICAL \
             --ignore-unfixed \
-            --exit-code 0
+            --exit-code 0 
 
       - name: Run Trivy FS scan on server (TABLE)
         run: |
