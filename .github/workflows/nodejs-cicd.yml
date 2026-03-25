@@ -2,7 +2,7 @@ name: Enterprise DevSecOps CI Pipeline
 # trigger-3
 on:
   push:
-    branches: [maater]
+    branches: [master]
   pull_request:
     branches: [master]
 
