@@ -508,7 +508,7 @@ jobs:
       - name: Update image in deployment manifest
         run: |
           NEW_TAG="${GITHUB_SHA}"
-          sed -i "s|imphani18/imphani:.*|imphani18/imphani:${NEW_TAG}|g"
+          sed -i "s|imphani18/imphani:.*|imphani18/imphani:${NEW_TAG}|g" k8s-manifests/app-deployment.yaml
 
       - name: Show updated manifest
         run: cat k8s-manifests/app-deployment.yaml
