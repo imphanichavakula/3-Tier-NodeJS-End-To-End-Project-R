@@ -508,7 +508,7 @@ jobs:
       - name: Update image in deployment manifest
         run: |
           NEW_TAG="${GITHUB_SHA}"
-          sed -i "s|\(imphani18/imphani:\).*|\1${NEW_TAG}|g" k8s-manifests/app-deployment.yaml
+          sed -i "s|imphani18/imphani:.*|imphani18/imphani:${NEW_TAG}|g"
 
       - name: Show updated manifest
         run: cat k8s-manifests/app-deployment.yaml
@@ -536,7 +536,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          ref: main   # ← explicitly pull latest main, not the trigger SHA
+          ref: master  # ← explicitly pull latest main, not the trigger SHA
 
       - name: Configure AWS credentials from GitHub OIDC
         uses: aws-actions/configure-aws-credentials@v4
