@@ -17,7 +17,7 @@ spec:
       - name: regcred
       containers:
       - name: nodejs-app
-        image: devopsshack/nodejs-crud-project:50944d2efbf7dd80a49382bad6085beb1da46d9f
+        image: devopsshack/nodejs-crud-project:cb781b7e74e0c75f4df0edbeaa273c0269289085
         ports:
         - containerPort: 5000
         env:
