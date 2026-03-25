@@ -1,6 +1,6 @@
 # 3-Tier NodeJS CRUD App — DevSecOps End-to-End Project
 
-> **DevOps Shack** | @devopsshack | 2026  
+> **DevOps Shack** | @devopsshack |  2026  
 > Full-stack user management app deployed on AWS EKS with an Enterprise DevSecOps CI/CD pipeline using GitHub Actions.
 
 ---
